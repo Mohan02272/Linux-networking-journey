@@ -119,3 +119,36 @@ Server consolidation
 Testing and development environments
 Cloud infrastructure
 
+
+6. Software Defined Networking (SDN)
+Introduction
+
+Software Defined Networking (SDN) is a networking approach where network control is centralized and managed through software instead of individual hardware devices.
+
+Core Concept
+
+SDN separates the network into two main parts:
+
+Control Plane: Makes decisions about traffic flow
+Data Plane: Forwards data packets based on instructions
+
+Architecture
+SDN Controller: Central management system
+Network Devices: Switches and routers that forward traffic
+Communication Protocols: Used between controller and devices
+
+Characteristics
+Centralized control
+Programmable network behavior
+Automated configuration
+Scalable infrastructure
+
+Real-World Example
+
+In cloud platforms, when a user creates a virtual network or firewall rule, the system automatically applies configurations across multiple devices using SDN.
+
+Use Cases
+Data center networking
+Cloud infrastructure
+Network automation
+Large-scale enterprise environments
