@@ -63,3 +63,59 @@ Use Cases
 Global enterprise networks
 Cloud services
 Remote communication systems
+
+
+4. Cloud Networking
+Introduction
+
+Cloud networking refers to the use of network infrastructure and services hosted in cloud platforms such as AWS, Azure, or Google Cloud. Instead of using physical hardware, networks are created and managed virtually.
+
+Key Components
+Virtual Private Cloud (VPC): A logically isolated virtual network
+Subnets: Segments within a VPC
+Route Tables: Define traffic routing rules
+Internet Gateway: Enables communication with the internet
+Security Groups: Act as virtual firewalls
+
+Characteristics
+Fully software-defined
+Scalable and flexible
+Highly available
+Integrated with cloud services
+Example
+
+A web application hosted in the cloud where users access servers through a load balancer within a virtual network.
+
+Use Cases
+Web hosting
+Cloud-based applications
+DevOps and microservices architecture
+
+
+5. Virtualization
+Introduction
+
+Virtualization is the process of creating virtual versions of physical resources such as servers, storage, or networks. It allows multiple virtual machines (VMs) to run on a single physical machine.
+
+Types
+Full Virtualization: Each virtual machine runs its own operating system
+Containerization: Lightweight virtualization where applications share the host OS kernel
+
+Components
+Hypervisor: Software that manages virtual machines
+Virtual Machines (VMs): Isolated environments running applications
+
+Advantages
+Efficient resource utilization
+Cost reduction
+Isolation between systems
+Easy scalability
+Example
+
+A single physical server running multiple virtual machines, each hosting different applications.
+
+Use Cases
+Server consolidation
+Testing and development environments
+Cloud infrastructure
+
