@@ -1,8 +1,5 @@
 # Linux Storage Management, Disk Partitioning, and Mounting
 
-## Complete Professional Guide for Students
-
----
 
 # Table of Contents
 
