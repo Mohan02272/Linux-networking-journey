@@ -1,6 +1,6 @@
 ## Networking Fundamentals: LAN, MAN, WAN, Cloud Networking, Virtualization, and SDN
 
-#Local Area Network (LAN)
+# Local Area Network (LAN)
 Introduction
 
 A Local Area Network (LAN) is a network that connects devices within a limited geographical area such as a home, office, or campus. It is typically privately owned and managed.
@@ -26,7 +26,7 @@ School or university labs
 Data centers (internal communication)
 
 
-#Metropolitan Area Network (MAN)
+# Metropolitan Area Network (MAN)
 Introduction
 
 A Metropolitan Area Network (MAN) covers a larger geographical area than a LAN, typically spanning a city or large campus.
@@ -45,7 +45,7 @@ University campus networks
 Government infrastructure networks
 
 
-#Wide Area Network (WAN)
+# Wide Area Network (WAN)
 Introduction
 
 A Wide Area Network (WAN) connects networks over large geographical areas such as countries or continents.
@@ -65,7 +65,7 @@ Cloud services
 Remote communication systems
 
 
-#Cloud Networking
+# Cloud Networking
 Introduction
 
 Cloud networking refers to the use of network infrastructure and services hosted in cloud platforms such as AWS, Azure, or Google Cloud. Instead of using physical hardware, networks are created and managed virtually.
@@ -92,7 +92,7 @@ Cloud-based applications
 DevOps and microservices architecture
 
 
-#Virtualization
+# Virtualization
 Introduction
 
 Virtualization is the process of creating virtual versions of physical resources such as servers, storage, or networks. It allows multiple virtual machines (VMs) to run on a single physical machine.
