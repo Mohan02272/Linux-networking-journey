@@ -1,9 +1,5 @@
 # Logical Volume Manager (LVM) in Linux
 
-## Complete Professional Guide for Students
-
----
-
 # Table of Contents
 
 1. Introduction to Storage Management
