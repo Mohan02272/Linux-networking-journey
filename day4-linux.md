@@ -1,7 +1,7 @@
-Linux Scripting & Automation
+## Linux Scripting & Automation
 
 
-1. Bash Scripting Basics
+# Bash Scripting Basics
 
 Bash scripting is writing a set of Linux commands in a file so they can be executed automatically.
 
@@ -37,7 +37,7 @@ else
   echo "Smaller or equal"
 fi
 
-Operators:
+#Operators:
 
 Meaning	Operator
 Equal	-eq
@@ -75,7 +75,7 @@ tar -czf backup.tar.gz $src
 echo "Backup completed"
 
 
-2. Scheduling Jobs (Cron)
+#  Scheduling Jobs (Cron)
 
 
 Cron is a scheduler used to run scripts automatically at specific times.
@@ -102,7 +102,7 @@ To rmeove jobs: crontab -r
 
 
 
-3. Environment Variables
+#  Environment Variables
 
 An environment variable is a key-value pair used by the system to store configuration values.
 
