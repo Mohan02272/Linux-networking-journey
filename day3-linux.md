@@ -1,4 +1,4 @@
-FILE PERMISSIONS & OWNERSHIP:
+# FILE PERMISSIONS & OWNERSHIP:
 
 Every file has 3 types of access:
 
@@ -22,7 +22,7 @@ To change ownsersip of a file : chown user <filename>
 To change owner and group of a file : chown user:group <filename>
 
 
-FIREWALL BASICS
+# FIREWALL BASICS
 
 Firewall = traffic filter
 
@@ -71,7 +71,7 @@ sudo firewall-cmd --reload
 
 
 
-SSH CONFIGURATION
+# SSH CONFIGURATION
 
 SSH = Secure Shell
 Used to remotely access Linux servers.
