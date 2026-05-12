@@ -47,14 +47,7 @@ Damage systems
 Encrypt files using ransomware
 Gain unauthorized access
 
-Network security is one of the most important areas in:
-
-System Administration
-DevOps
-Cloud Engineering
-Ethical Hacking
-Cybersecurity
-2. Objectives of Network Security
+# Objectives of Network Security
 
 The main objectives are:
 
@@ -64,7 +57,8 @@ Prevent unauthorized access
 Detect attacks
 Maintain service availability
 Ensure secure communication
-3. CIA Triad
+
+# CIA Triad
 
 The CIA Triad is the foundation of information security.
 
@@ -82,7 +76,7 @@ Banking credentials
 Medical records
 Company secrets
 
-Protection methods:
+## Protection methods:
 
 Encryption
 VPN
@@ -98,7 +92,7 @@ Financial transaction data
 Database records
 Configuration files
 
-Protection methods:
+## Protection methods:
 
 Hashing
 Checksums
@@ -114,13 +108,14 @@ Hardware failure
 Ransomware
 Power outages
 
-Protection methods:
+## Protection methods:
 
 Redundancy
 Load balancing
 Backup systems
 Firewalls
-4. Types of Cyber Attacks
+
+# Types of Cyber Attacks
 
 Cyber attacks target networks, applications, systems, or users.
 
@@ -135,7 +130,8 @@ Spoofing	Fake identities
 Sniffing	Capture traffic
 SQL Injection	Attack databases
 Social Engineering	Manipulate humans
-5. Malware Attacks
+
+# Malware Attacks
 
 Malware means malicious software.
 
@@ -154,27 +150,24 @@ Trojan	Fake legitimate software
 Spyware	Steals information secretly
 Ransomware	Encrypts files for ransom
 Rootkit	Hides attacker presence
-Virus
 
+## Virus
 A virus attaches itself to files or programs.
 
 Characteristics:
-
 Requires user action
 Spreads through infected files
 Damages systems
-Worm
 
+##Worm
 A worm spreads automatically through networks.
 
 Characteristics:
-
 Self-replicating
 Fast spreading
 No user interaction needed
 
-Trojan
-
+## Trojan
 A Trojan disguises itself as legitimate software.
 
 Example:
@@ -197,7 +190,8 @@ Regular backups
 Updates
 Email security
 Endpoint protection
-6. Phishing Attacks
+
+#  Phishing Attacks
 
 Phishing tricks users into revealing sensitive information.
 
