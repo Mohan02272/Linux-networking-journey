@@ -1,7 +1,6 @@
-Network Security
+## Network Security
 
-Complete Professional Notes
-Table of Contents
+# Table of Contents
 Introduction to Network Security
 Objectives of Network Security
 CIA Triad
@@ -24,21 +23,9 @@ Hashing
 Digital Signatures
 SSL/TLS
 Authentication Concepts
-Authentication Methods
-Multi-Factor Authentication
-SSH Key Authentication
-Authorization vs Authentication
-Firewalls
-IDS and IPS
-Security Best Practices
-Enterprise Network Security
-Common Security Tools
-Security Monitoring
-Incident Response Basics
-Interview Questions and Answers
-Practical Labs
-Conclusion
-1. Introduction to Network Security
+
+
+# Introduction to Network Security
 
 Network Security is the process of protecting computer networks, devices, systems, applications, and data from unauthorized access, attacks, damage, or theft.
 
