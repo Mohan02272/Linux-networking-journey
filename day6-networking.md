@@ -455,3 +455,599 @@ tracepath google.com
 * Locate network failures
 
 ---
+
+# 16. ip Command
+
+Modern Linux networking utility.
+
+---
+
+## Show IP Addresses
+
+```bash
+ip addr
+```
+
+---
+
+## Show Routes
+
+```bash
+ip route
+```
+
+---
+
+## Show Interfaces
+
+```bash
+ip link
+```
+
+---
+
+## Bring Interface Up
+
+```bash
+sudo ip link set eth0 up
+```
+
+---
+
+## Bring Interface Down
+
+```bash
+sudo ip link set eth0 down
+```
+
+---
+
+# 17. ifconfig Command
+
+Legacy network configuration tool.
+
+---
+
+## Display Interfaces
+
+```bash
+ifconfig
+```
+
+---
+
+## Enable Interface
+
+```bash
+sudo ifconfig eth0 up
+```
+
+---
+
+## Disable Interface
+
+```bash
+sudo ifconfig eth0 down
+```
+
+---
+
+# 18. netstat Command
+
+Displays network statistics.
+
+---
+
+## Show Listening Ports
+
+```bash
+netstat -tulnp
+```
+
+---
+
+## Breakdown
+
+| Option | Meaning        |
+| ------ | -------------- |
+| -t     | TCP            |
+| -u     | UDP            |
+| -l     | Listening      |
+| -n     | Numeric output |
+| -p     | Process info   |
+
+---
+
+# 19. ss Command
+
+Modern replacement for netstat.
+
+---
+
+## Show Listening Ports
+
+```bash
+ss -tulnp
+```
+
+---
+
+## Advantages
+
+* Faster
+* More detailed
+* Modern utility
+
+---
+
+# 20. nslookup Command
+
+DNS troubleshooting tool.
+
+---
+
+## Command
+
+```bash
+nslookup google.com
+```
+
+---
+
+## Query Specific DNS Server
+
+```bash
+nslookup google.com 8.8.8.8
+```
+
+---
+
+# 21. dig Command
+
+Advanced DNS query tool.
+
+---
+
+## Command
+
+```bash
+dig google.com
+```
+
+---
+
+## Short Output
+
+```bash
+dig +short google.com
+```
+
+---
+
+# 22. host Command
+
+Simple DNS lookup utility.
+
+---
+
+## Command
+
+```bash
+host google.com
+```
+
+---
+
+# 23. arp Command
+
+Displays ARP cache.
+
+---
+
+## Command
+
+```bash
+arp -a
+```
+
+---
+
+## Purpose
+
+Maps:
+
+* IP addresses
+* MAC addresses
+
+---
+
+# 24. tcpdump Command
+
+Command-line packet capture tool.
+
+---
+
+## Capture Packets
+
+```bash
+sudo tcpdump -i eth0
+```
+
+---
+
+## Capture Specific Port
+
+```bash
+sudo tcpdump port 80
+```
+
+---
+
+## Save Capture
+
+```bash
+sudo tcpdump -w capture.pcap
+```
+
+---
+
+# 25. Wireshark
+
+Graphical packet analyzer.
+
+---
+
+## Features
+
+* Deep packet inspection
+* Protocol analysis
+* Traffic filtering
+* Security investigation
+
+---
+
+## Common Usage
+
+* Troubleshooting
+* Security analysis
+* Protocol learning
+
+---
+
+# 26. curl Command
+
+Tests HTTP and HTTPS connectivity.
+
+---
+
+## Basic Request
+
+```bash
+curl https://google.com
+```
+
+---
+
+## Show Headers
+
+```bash
+curl -I https://google.com
+```
+
+---
+
+## Test APIs
+
+```bash
+curl https://api.example.com
+```
+
+---
+
+# 27. wget Command
+
+Downloads files over HTTP/HTTPS.
+
+---
+
+## Download File
+
+```bash
+wget https://example.com/file.zip
+```
+
+---
+
+# 28. nc (Netcat)
+
+Network testing utility.
+
+---
+
+## Test Port Connectivity
+
+```bash
+nc -zv google.com 443
+```
+
+---
+
+## Listen on Port
+
+```bash
+nc -l 8080
+```
+
+---
+
+# 29. telnet Command
+
+Tests remote port connectivity.
+
+---
+
+## Example
+
+```bash
+telnet google.com 80
+```
+
+---
+
+## Purpose
+
+Verify whether ports are open.
+
+---
+
+# 30. mtr Command
+
+Combines ping and traceroute.
+
+---
+
+## Command
+
+```bash
+mtr google.com
+```
+
+---
+
+## Benefits
+
+* Real-time monitoring
+* Detect packet loss
+* Identify unstable routes
+
+---
+
+# 31. Diagnosing Slow Networks
+
+## Common Causes
+
+* Congestion
+* DNS delays
+* Packet loss
+* Bandwidth saturation
+* Wireless interference
+
+---
+
+## Troubleshooting Steps
+
+1. Test latency using ping
+2. Check routes using traceroute
+3. Verify DNS speed
+4. Monitor bandwidth
+5. Capture packets if needed
+
+---
+
+# 32. Diagnosing DNS Issues
+
+## Symptoms
+
+* Websites not loading
+* Slow browsing
+* Hostnames unresolved
+
+---
+
+## Commands
+
+```bash
+nslookup google.com
+```
+
+```bash
+dig google.com
+```
+
+---
+
+## Check DNS Server
+
+```bash
+cat /etc/resolv.conf
+```
+
+---
+
+# 33. Diagnosing Routing Problems
+
+## Symptoms
+
+* Cannot reach remote networks
+* Some websites unreachable
+* High latency
+
+---
+
+## Commands
+
+```bash
+ip route
+```
+
+```bash
+traceroute google.com
+```
+
+---
+
+# 34. Diagnosing Firewall Problems
+
+Firewalls may block traffic.
+
+---
+
+## Check Firewalld
+
+```bash
+sudo firewall-cmd --list-all
+```
+
+---
+
+## Check iptables
+
+```bash
+sudo iptables -L
+```
+
+---
+
+## Common Symptoms
+
+* Port unreachable
+* Connection timeout
+* Service inaccessible
+
+---
+
+# 35. Diagnosing Port Issues
+
+## Check Listening Ports
+
+```bash
+ss -tulnp
+```
+
+---
+
+## Test Port Access
+
+```bash
+nc -zv server 443
+```
+
+---
+
+# 36. Linux Log Files for Networking
+
+Important log files:
+
+| Log File          | Purpose             |
+| ----------------- | ------------------- |
+| /var/log/syslog   | General system logs |
+| /var/log/messages | System events       |
+| /var/log/auth.log | Authentication logs |
+| /var/log/secure   | Security logs       |
+
+---
+
+## View Logs
+
+```bash
+sudo tail -f /var/log/syslog
+```
+
+---
+
+# 37. Troubleshooting SSH Connectivity
+
+## Common Problems
+
+* SSH service down
+* Firewall block
+* Wrong credentials
+* Port closed
+
+---
+
+## Check SSH Service
+
+```bash
+sudo systemctl status ssh
+```
+
+---
+
+## Test SSH Port
+
+```bash
+nc -zv server 22
+```
+
+---
+
+# 38. Troubleshooting Web Servers
+
+## Common Problems
+
+* Service stopped
+* Port blocked
+* DNS issue
+* SSL certificate problem
+
+---
+
+## Check Web Service
+
+```bash
+sudo systemctl status nginx
+```
+
+OR
+
+```bash
+sudo systemctl status apache2
+```
+
+---
+
+## Test HTTP
+
+```bash
+curl -I http://server
+```
+
+---
+
+# 39. Troubleshooting VPN Connections
+
+## Common Problems
+
+* Authentication failure
+* DNS problems
+* Firewall blocking
+* Tunnel issues
+
+---
+
+## Check VPN Interface
+
+```bash
+ip addr
+```
+
+---
+
+## Test VPN Connectivity
+
+```bash
+ping remote_server
+```
+
+---
