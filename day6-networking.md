@@ -260,3 +260,198 @@ dig google.com
 ```bash
 cat /etc/resolv.conf
 ```
+
+---
+
+# 9. Gateway and Routing Problems
+
+A gateway allows systems to communicate outside local networks.
+
+---
+
+## Check Gateway
+
+```bash
+ip route
+```
+
+---
+
+## Example Output
+
+```bash
+default via 192.168.1.1 dev eth0
+```
+
+---
+
+## Common Problems
+
+* Wrong default gateway
+* Missing routes
+* Router failure
+
+---
+
+# 10. Connectivity Troubleshooting
+
+Connectivity troubleshooting checks whether systems can communicate.
+
+---
+
+## Basic Troubleshooting Flow
+
+1. Check physical connection
+2. Verify IP address
+3. Test localhost
+4. Test local network
+5. Test gateway
+6. Test internet
+7. Test DNS
+
+---
+
+# 11. Performance Troubleshooting
+
+Performance problems affect network speed and stability.
+
+---
+
+## Common Causes
+
+* High latency
+* Congestion
+* Packet loss
+* Bandwidth saturation
+* Faulty hardware
+* DNS delays
+
+---
+
+# 12. Packet Loss and Latency
+
+## Packet Loss
+
+Packets fail to reach destination.
+
+Causes:
+
+* Congestion
+* Bad cables
+* Firewall filtering
+* Wireless interference
+
+---
+
+## Latency
+
+Delay in communication.
+
+Measured in milliseconds.
+
+High latency causes:
+
+* Slow browsing
+* Lag
+* Poor VoIP quality
+
+---
+
+# 13. Network Troubleshooting Tools
+
+Linux provides many troubleshooting tools.
+
+| Tool       | Purpose               |
+| ---------- | --------------------- |
+| ping       | Connectivity testing  |
+| traceroute | Route tracking        |
+| ip         | Network configuration |
+| ifconfig   | Legacy interface tool |
+| netstat    | Network statistics    |
+| ss         | Socket statistics     |
+| tcpdump    | Packet capture        |
+| Wireshark  | Packet analysis       |
+| dig        | DNS testing           |
+| curl       | HTTP testing          |
+| nc         | Port testing          |
+
+---
+
+# 14. ping Command
+
+Used to test connectivity.
+
+---
+
+## Command
+
+```bash
+ping google.com
+```
+
+---
+
+## What ping Tests
+
+* DNS resolution
+* Reachability
+* Latency
+* Packet loss
+
+---
+
+## Example Output
+
+```bash
+64 bytes from 142.250.190.14: icmp_seq=1 ttl=118 time=20 ms
+```
+
+---
+
+## Important Options
+
+| Option | Meaning           |
+| ------ | ----------------- |
+| -c     | Number of packets |
+| -i     | Interval          |
+| -s     | Packet size       |
+
+---
+
+## Example
+
+```bash
+ping -c 4 google.com
+```
+
+---
+
+# 15. traceroute and tracepath
+
+Used to identify the path packets take.
+
+---
+
+## traceroute
+
+```bash
+traceroute google.com
+```
+
+---
+
+## tracepath
+
+```bash
+tracepath google.com
+```
+
+---
+
+## Purpose
+
+* Detect routing problems
+* Identify slow hops
+* Locate network failures
+
+---
